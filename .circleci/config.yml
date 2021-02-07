@@ -10,7 +10,7 @@ jobs:
     docker:
       - image cimg/base:2020.01
     steps:
-      -run: echo $MY_ENV_VAR
+      -run: echo $MY_ENV_VARt
   print_world:
     docker:
       - image circleci/node:13.8.0
