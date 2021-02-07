@@ -8,9 +8,9 @@ orbs:
 jobs:
   print_hello:
     docker:
-      - image circleci/node:13.8.0
+      - image cimg/base:2020.01
     steps:
-      -run: echo hello
+      -run: echo $MY_ENV_VAR
   print_world:
     docker:
       - image circleci/node:13.8.0
